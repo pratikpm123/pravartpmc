@@ -1,22 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Pravart PMC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <h1>We're Coming Soon!</h1>
-        <p>Stay tuned for our exciting launch.</p>
-        <img src="logo.png" alt="Your Logo">
-        <p>Subscribe to our newsletter for updates:</p>
-        <form>
-            <input type="email" placeholder="Your Email Address">
-            <button type="submit">Subscribe</button>
-        </form>
-        <p>&copy; 2024 Pravart PMC</p>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
     </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <img class="gridlove-logo" src="img/logo.png" alt="Pravart" style="width: 100px;">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="#about-us" class="nav-item nav-link">About</a>
+                <a href="#our-services" class="nav-item nav-link">Service</a>
+                <a href="#projects" class="nav-item nav-link">Project</a>
+                <a href="#contact-us" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To Pravart</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Project Management Consultants</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">You Imagine Impossible, We Build Impossible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To WooDY</h5> -->
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Architecture Design & Landscaping</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">We provide services for planning and architecture for housing and industrial, buildings and plants, interior and landscaping.</p>
+                               </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-3.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(53, 53, 53, .7);">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-8 text-center">
+                                <!-- <h5 class="text-white text-uppercase mb-3 animated slideInDown">Welcome To WooDY</h5> -->
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Structure Design</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">We provide structural design services for residential as well as industrial buildings.</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="wow fadeIn" data-wow-delay="0.3s">
+                    <h2 style="text-align: center;  color: #b8895e;">We have more than 10 years experience in Constrution</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Start -->
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="about-us">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">About Us</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Pravart Project Management Consultant is a construction project management consultancy company provides expert guidance and support to clients involved in the construction industry. Our services typically include project planning, cost estimation, scheduling, risk management, quality control, and project delivery.</p>
+                        <div class="row g-4 mb-4 pb-2">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-users fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">50</h2>
+                                        <p class="fw-medium mb-0">Happy Clients</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-3">
+                                        <h2 class="text-primary mb-1" data-toggle="counter-up">50</h2>
+                                        <p class="fw-medium mb-0">Projects Done</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#projects" class="btn btn-primary py-3 px-5">Explore More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="our-services">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="display-5 mb-5">Our Services</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Project Management Consultancy</h4>
+                            <p>Pravart's primary goal is to ensure that their clients' construction projects are completed on time, within budget, and to the required standard of quality. We work closely with clients to identify their needs and goals, and then develop a project.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Quantity Surveying</h4>
+                            <p>Our company prepares accurate and detailed cost estimates and budgets for construction projects. We help clients in forecasting the costs of the project from the outset to the completion stage, to ensure that the project is delivered within the budget.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Architecture Design & Landscaping</h4>
+                            <p>We provide services for planning and architecture for housing and industrial, buildings and plants, interior and landscaping. We have in house as well as associated architects to look after planning and architecture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Cost Consultancy</h4>
+                            <p>We help customer by developing cost plans and cost controls for the project, monitoring and reviewing costs throughout the project lifecycle, and providing advice on how to manage and minimize project costs.</p>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Structure Design</h4>
+                            <p>We provide structural design services for residential as well as industrial buildings. We also design and check stability of space frames.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-6.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Techno Legal Services</h4>
+                            <p>Techno-legal services in our company help clients navigate the legal and technical complexities of construction projects, mitigate risks, and ensure compliance with applicable laws and regulations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Why Choose Us</h1>
+                        </div>
+                        <p class="mb-4 pb-2">Pravart has a team of experienced construction professionals, including project managers, engineers, architects, quantity surveyors, and other specialists. We use a range of tools and techniques to manage the construction process, including project management software, risk assessment tools, and performance metrics.</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Quality</p>
+                                        <h5 class="mb-0">Services</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-user-check fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Creative</p>
+                                        <h5 class="mb-0">Designers</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-drafting-compass fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Free</p>
+                                        <h5 class="mb-0">Consultation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 60px; height: 60px;">
+                                        <i class="fa fa-headphones fa-2x text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="mb-2">Customer</p>
+                                        <h5 class="mb-0">Support</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-5" id="projects">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1 class="display-5 mb-5">Our Projects</h1>
+            </div>
+            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-12 text-center">
+                    <ul class="list-inline mb-5" id="portfolio-flters">
+                        <li class="mx-2 active" data-filter="*">All</li>
+                        <li class="mx-2" data-filter=".residential">Residential</li>
+                        <li class="mx-2" data-filter=".hospitality">Hospitality</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row g-4 portfolio-container">
+                <div class="col-lg-4 col-md-6 portfolio-item residential wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Residential</p>
+                            <h5 class="lh-base mb-0">Decora Vouge</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item hospitality wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Hospitality</p>
+                            <h5 class="lh-base mb-0">Fortune Park JPS Grand (Rajkot)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item residential wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Residential</p>
+                            <h5 class="lh-base mb-0">Decora West Hill</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item residential wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Residential</p>
+                            <h5 class="lh-base mb-0">Decora West Hill</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item residential wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Residential</p>
+                            <h5 class="lh-base mb-0">Windsor Garden</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 portfolio-item residential wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="rounded overflow-hidden">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <div class="portfolio-overlay">
+                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="border border-5 border-light border-top-0 p-4">
+                            <p class="text-primary fw-medium mb-2">Residential</p>
+                            <h5 class="lh-base mb-0">The North</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects End -->
+
+
+    <!-- Quote Start -->
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container quote px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Experties</h1>
+                        </div>
+                        <ul style="font-weight: 500;font-size: large;">
+                            <li>Project Management</li>
+                            <li>Turnkey</li>
+                            <li>Architecture</li>
+                            <li>Interior Design</li>
+                            <li>Valuation</li>
+                            <li>Site selection</li>
+                            <li>Due diligence</li>
+                            <li>Strategic planning</li>
+                            <li>Design management</li>
+                            <li>Risk management</li>
+                            <li>Schedule management</li>
+                            <li>Contract administration</li>
+                            <li>Change management</li>
+                            <li>Quality and commissioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+    <div class="container-xxl py-5" id="contact-us">
+        <div class="container">
+            <div class="row g-5">
+                <div class="wow fadeIn" data-wow-delay="0.7s">
+                    <h2 style="text-align: center;  color: #b8895e;">Build your vision with confidence — contact us today for expert construction solutions tailored to your needs!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Start -->
+    <div class="container-fluid bg-light overflow-hidden px-lg-0">
+        <div class="container contact px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 contact-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <div class="section-title text-start">
+                            <h1 class="display-5 mb-4">Contact Us</h1>
+                        </div>
+                        <div>
+                            <div>
+                              <h3>Head office</h3>
+                            </div>
+                            <p>Pitru Krupa, 1 Hasanvadi, Sadguru Provision Store, Gayatrinagar main road, Rajkot, Gujarat - 360002</p>
+                            <ul>
+                              <li>Phone: +918799299877 </li>
+                              <li>Email: <a href="mailto:pravartpmc@gmail.com">pravartpmc@gmail.com</a></li>
+                              <li>Follow us for daily updates! 
+                                <a href="https://www.instagram.com/pravartpmc7/profilecard/?igsh=MTQ5M2hueWc0OWUxdA==" target="_blank"><i class="fab fa-instagram"></i></a>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d461.52383495907384!2d70.8043181!3d22.2707657!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca70c218b473%3A0xd72123cddf6d6dd4!2sAtika%20Industrial%20Estate%2C%2069%2C%20Hasanwadi%20Main%20Rd%2C%20Hasan%20Vadi%20Society%2C%20Gopal%20Nagar%2C%20Bhakti%20Nagar%2C%20Rajkot%2C%20Gujarat%20360002!5e0!3m2!1sen!2sin!4v1734258948088!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="text-center mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">PravartPMC</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
