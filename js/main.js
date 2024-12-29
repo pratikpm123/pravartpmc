@@ -62,6 +62,11 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    $('.navbar-collapse a').click(function() {
+        /* always close responsive nav after click */
+        $('.navbar-collapse').collapse('hide');
+   });
     
 })(jQuery);
 
