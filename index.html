@@ -51,11 +51,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="#about-us" class="nav-item nav-link">About</a>
-                <a href="#our-services" class="nav-item nav-link">Service</a>
+                <a href="#main" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#services" class="nav-item nav-link">Service</a>
                 <a href="#projects" class="nav-item nav-link">Project</a>
-                <a href="#contact-us" class="nav-item nav-link">Contact</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
@@ -64,7 +64,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
+    <div class="container-fluid p-0 pb-5" id="main">
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-1.jpg" alt="">
@@ -128,10 +128,10 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="about-us">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="about">
         <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                <div class="col-lg-6 ps-lg-0 d-none d-lg-block" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: cover;" alt="">
                     </div>
@@ -176,7 +176,7 @@
 
 
     <!-- Service Start -->
-    <div class="container-xxl py-5" id="our-services">
+    <div class="container-xxl py-5" id="services">
         <div class="container">
             <div class="section-title text-center">
                 <h1 class="display-5 mb-5">Our Services</h1>
@@ -193,17 +193,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/service-2.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Quantity Surveying</h4>
-                            <p>Our company prepares accurate and detailed cost estimates and budgets for construction projects. We help clients in forecasting the costs of the project from the outset to the completion stage, to ensure that the project is delivered within the budget.</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item">
                         <div class="overflow-hidden">
@@ -212,6 +201,28 @@
                         <div class="p-4 text-center border border-5 border-light border-top-0">
                             <h4 class="mb-3">Architecture Design & Landscaping</h4>
                             <p>We provide services for planning and architecture for housing and industrial, buildings and plants, interior and landscaping. We have in house as well as associated architects to look after planning and architecture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-5.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Structure Design</h4>
+                            <p>We specialize in structural design for residential and industrial buildings, ensuring stability and safety. Our expertise also includes designing and assessing the strength of space frames with precision for reliable and robust structural solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                        </div>
+                        <div class="p-4 text-center border border-5 border-light border-top-0">
+                            <h4 class="mb-3">Quantity Surveying</h4>
+                            <p>Our company prepares accurate and detailed cost estimates and budgets for construction projects. We help clients in forecasting the costs of the project from the outset to the completion stage, to ensure that the project is delivered within the budget.</p>
                         </div>
                     </div>
                 </div>
@@ -226,17 +237,6 @@
                         </div>
                     </div>
                 </div>  
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/service-5.jpg" alt="">
-                        </div>
-                        <div class="p-4 text-center border border-5 border-light border-top-0">
-                            <h4 class="mb-3">Structure Design</h4>
-                            <p>We provide structural design services for residential as well as industrial buildings. We also design and check stability of space frames.</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="service-item">
                         <div class="overflow-hidden">
@@ -312,7 +312,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+                <div class="col-lg-6 pe-lg-0 d-none d-lg-block" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
                     </div>
@@ -439,7 +439,7 @@
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div class="container quote px-lg-0">
             <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
+                <div class="col-lg-6 ps-lg-0 d-none d-lg-block" style="min-height: 400px;">
                     <div class="position-relative h-100">
                         <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
                     </div>
@@ -452,6 +452,7 @@
                         <ul style="font-weight: 500;font-size: large;">
                             <li>Project Management</li>
                             <li>Turnkey</li>
+                            <li>Structure Design</li>
                             <li>Architecture</li>
                             <li>Interior Design</li>
                             <li>Valuation</li>
@@ -472,7 +473,7 @@
     </div>
     <!-- Quote End -->
 
-    <div class="container-xxl py-5" id="contact-us">
+    <div class="container-xxl py-5" id="contact">
         <div class="container">
             <div class="row g-5">
                 <div class="wow fadeIn" data-wow-delay="0.7s">

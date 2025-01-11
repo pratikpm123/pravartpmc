@@ -63,10 +63,33 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
-    $('.navbar-collapse a').click(function() {
-        /* always close responsive nav after click */
-        $('.navbar-collapse').collapse('hide');
-   });
+    $('.navbar-nav a').on('click', function (event) {
+        event.preventDefault();
+    
+        // Get the target section ID
+        var target = $(this).attr('href');
+        console.log(target);
+    
+        // Check if the navbar is collapsible
+        if ($('.navbar-toggler').is(':visible')) {
+            
+            // If collapsible, hide the navbar and wait for the collapse animation to finish
+            $('.navbar-collapse').collapse('hide');
+            $('.navbar-collapse').on('hidden.bs.collapse', function () {
+                scrollToSection(target);
+            });
+        } else {
+            // If not collapsible, scroll directly
+            scrollToSection(target);
+        }
+    });
+    
+    // Function to scroll to the target section
+    function scrollToSection(target) {
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 100); // Adjust duration as needed
+    }
     
 })(jQuery);
 
